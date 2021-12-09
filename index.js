@@ -7,8 +7,6 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-
-
 app.use("/api/", (_, res)=>{
     res.json({data: "This is API DATA!!!"});
 })
