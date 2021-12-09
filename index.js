@@ -9,11 +9,11 @@ app.use(express.json());
 
 app.use("/api/", (_, res)=>{
     res.json({data: "This is API DATA!!!"});
-})
+});
 
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
-})
+});
 
 
 // *** SOME CONSOLE LOGS TO TEST IF WORKING ***
