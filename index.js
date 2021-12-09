@@ -7,6 +7,8 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
+
+
 app.use("/api/", (_, res)=>{
     res.json({data: "This is API DATA!!!"});
 })
@@ -14,7 +16,6 @@ app.use("/api/", (_, res)=>{
 app.listen(port,()=>{
     console.log(`server is running on ${port}`)
 })
-
 
 
 // *** SOME CONSOLE LOGS TO TEST IF WORKING ***
